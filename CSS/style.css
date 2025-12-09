@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  color: #222;
+}
+
+input, textarea {
+  width: 250px;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+#error, #loginError, #registerError {
+  color: red;
+}
