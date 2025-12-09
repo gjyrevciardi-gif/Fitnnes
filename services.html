@@ -2,17 +2,39 @@
 <html>
 <head>
   <title>Programs</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script defer src="js/image-swap.js"></script>
 </head>
 <body>
 
-<h1>Our Training Programs</h1>
+  <main class="container">
+    <h1>Programs</h1>
+    <p>Choose a program that fits your goals — personalized plans and group classes.</p>
 
-<ul>
-  <li><a href="service-details.html">Personal Training</a></li>
-  <li>CrossFit</li>
-  <li>Cardio & Weight Training</li>
-</ul>
+    <section class="cards">
+        <article class="card">
+          <img src="assets/images/trainer1.svg" alt="Personal Training" data-prefer="assets/images/alex.svg,assets/images/alex.jpg,assets/images/trainer1.svg">
+        <h3>Personal Training</h3>
+        <p>One-on-one coaching tailored to your goals.</p>
+        <a class="btn" href="service-details.html">Learn more</a>
+      </article>
+
+        <article class="card">
+          <img src="assets/images/trainer2.svg" alt="CrossFit" data-prefer="assets/images/sam.svg,assets/images/sam.jpg,assets/images/trainer2.svg">
+        <h3>CrossFit</h3>
+        <p>High-intensity group workouts to build strength and endurance.</p>
+        <a class="btn" href="service-details.html">Learn more</a>
+      </article>
+
+        <article class="card">
+          <img src="assets/images/placeholder.svg" alt="Cardio & Strength" data-prefer="assets/images/cardio.svg,assets/images/cardio.jpg,assets/images/placeholder.svg">
+        <h3>Cardio & Strength</h3>
+        <p>Balanced sessions focusing on fat loss and muscle tone.</p>
+        <a class="btn" href="service-details.html">Learn more</a>
+      </article>
+    </section>
+
+  </main>
 
 </body>
 </html>

@@ -2,15 +2,38 @@
 <html>
 <head>
   <title>About Us</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script defer src="js/image-swap.js"></script>
 </head>
 <body>
 
-<h1>About FitZone Gym</h1>
-<p>FitZone Gym is a modern fitness center focused on health, strength and lifestyle.</p>
-<p>We provide professional trainers and modern equipment.</p>
+  <main class="container">
+    <h1>About</h1>
+    <p>FitZone Gym is a community-first gym focused on sustainable progress, professional coaching, and a welcoming environment.</p>
 
-<a href="index.html">Back to Home</a>
+    <section class="team">
+      <h2>Meet our coaches</h2>
+      <div class="cards">
+        <article class="card small">
+          <img src="assets/images/trainer1.svg" alt="Coach Alex" data-prefer="assets/images/alex.svg,assets/images/alex.jpg,assets/images/trainer1.svg">
+          <h4>Alex</h4>
+          <p>Head Coach — Strength & Conditioning</p>
+        </article>
+        <article class="card small">
+          <img src="assets/images/trainer2.svg" alt="Coach Sam" data-prefer="assets/images/sam.svg,assets/images/sam.jpg,assets/images/trainer2.svg">
+          <h4>Sam</h4>
+          <p>Cardio Specialist</p>
+        </article>
+        <article class="card small">
+          <img src="assets/images/trainer3.svg" alt="Coach Rita" data-prefer="assets/images/rita.svg,assets/images/rita.jpg,assets/images/trainer3.svg">
+          <h4>Rita</h4>
+          <p>Nutrition Coach</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <p class="container"><a class="btn" href="index.html">Back to Home</a></p>
 
 </body>
 </html>

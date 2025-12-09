@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Upload / Preview Images</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <style>
+    .upload-area { max-width: 900px; margin: 28px auto; padding: 18px; background:#fff; border-radius:10px; }
+    .thumbs { display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
+    .thumb { width:160px; border-radius:8px; overflow:hidden; background:#f7f7f9; padding:8px; text-align:center; }
+    .thumb img{ width:100%; height:100px; object-fit:cover; display:block; border-radius:6px; }
+    .thumb p{ margin:8px 0 0; font-size:0.9rem; color:#333 }
+    .note{ font-size:0.9rem; color:#555; margin-top:8px }
+    .controls{ display:flex; gap:8px; margin-top:12px }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="upload-area">
+      <h1>Upload & Preview Images</h1>
+      <p class="note">This page lets the teacher preview images before adding them to the repo. Because this is a static site, files won't be saved back to the repository from the browser — use the instructions below to add images to `assets/images/`.</p>
+
+      <input id="fileInput" type="file" accept="image/*" multiple>
+      <div class="controls">
+        <button id="downloadAll" class="btn">Download Selected</button>
+        <button id="clearAll" class="btn">Clear</button>
+      </div>
+
+      <div id="thumbs" class="thumbs" aria-live="polite"></div>
+
+      <section class="note">
+        <h3>How to add images permanently</h3>
+        <ol>
+          <li>Option A (recommended): Use the GitHub web UI. Open the `assets/images/` folder and click <strong>Add file → Upload files</strong> to upload images from your computer.</li>
+          <li>Option B: Copy files into the `assets/images/` folder locally and commit with Git, e.g. <code>git add assets/images/* &amp;&amp; git commit -m "Add photos" &amp;&amp; git push</code> (PowerShell: use semicolons if chaining).</li>
+          <li>Option C (manual): If you prefer, download selected images using the button above and then add them to the repo yourself.</li>
+        </ol>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/upload.js"></script>
+</body>
+</html>

@@ -2,20 +2,51 @@
 <html>
 <head>
   <title>Personal Training</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script defer src="js/image-swap.js"></script>
 </head>
 <body>
 
-<h1>Personal Training</h1>
-<p>One-on-one sessions with certified coaches.</p>
+  <header class="service-hero" data-background-prefer="assets/images/hero.jpg,assets/images/gym-hero.svg" style="background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.2)), url('assets/images/gym-hero.svg') center/cover no-repeat;">
+    <div class="container">
+      <h1>Personal Training</h1>
+      <p class="lead">One-on-one sessions with certified coaches to accelerate your progress.</p>
+    </div>
+  </header>
 
-<ul>
-  <li>Weight loss</li>
-  <li>Muscle gain</li>
-  <li>Strength programs</li>
-</ul>
+  <main class="container">
+    <section class="service-overview">
+      <h2>What you'll get</h2>
+      <ul>
+        <li>Personalized workout plan</li>
+        <li>Nutrition guidance</li>
+        <li>Progress tracking and weekly check-ins</li>
+      </ul>
+    </section>
 
-<a href="services.html">Back to Programs</a>
+    <section class="service-details">
+      <h2>Session Types</h2>
+      <div class="cards">
+        <article class="card small">
+          <img src="assets/images/placeholder.svg" alt="Weight Loss" data-prefer="assets/images/weightloss.svg,assets/images/weightloss.jpg,assets/images/placeholder.svg">
+          <h4>Weight Loss</h4>
+          <p>Structured cardio and nutrition.</p>
+        </article>
+        <article class="card small">
+          <img src="assets/images/placeholder.svg" alt="Muscle Gain" data-prefer="assets/images/musclegain.svg,assets/images/musclegain.jpg,assets/images/placeholder.svg">
+          <h4>Muscle Gain</h4>
+          <p>Hypertrophy-focused training plans.</p>
+        </article>
+        <article class="card small">
+          <img src="assets/images/placeholder.svg" alt="Strength" data-prefer="assets/images/strength.svg,assets/images/strength.jpg,assets/images/placeholder.svg">
+          <h4>Strength</h4>
+          <p>Progressive overload and technique coaching.</p>
+        </article>
+      </div>
+    </section>
+
+    <p><a class="btn" href="services.html">Back to Programs</a></p>
+  </main>
 
 </body>
 </html>

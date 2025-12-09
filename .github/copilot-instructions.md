@@ -27,6 +27,31 @@
 + Script loading: JS is included with `defer` in page head. Keep `defer` so the DOM is available when the script runs.
 
 # How to run & test (developer workflows)
+ 
+ # Uploading images (teacher guidance)
+ 
+ - This repository is static; the browser cannot save files back to the Git repo. To add photos permanently, follow one of these options:
+   - **GitHub web UI (recommended):** open the `assets/images/` folder in the repo on GitHub, click `Add file` → `Upload files`, drag your images, then commit. Files will be available immediately on the site after push.
+   - **Local Git:** copy image files into `assets/images/` locally, then run:
+     ```powershell
+     git add assets/images/*; git commit -m "Add photos"; git push
+     ```
+   - **Manual download from preview page:** open `upload.html` (added to the repo) in your browser, preview files, click the download links, then add those files to `assets/images/` and push.
+ 
+ - A helpful preview page is included at `upload.html`. It allows the teacher to select multiple images, preview them, and download the selected files for later commit. It does not upload to GitHub automatically.
+
+Tips for file names (so the site automatically shows uploaded photos):
+
+- Place images in `assets/images/`.
+- Recommended filenames (the site will try these names first):
+  - `hero.jpg` — hero background used on service pages
+  - `alex.jpg` — trainer Alex (personal training)
+  - `sam.jpg` — trainer Sam (cardio/CrossFit)
+  - `rita.jpg` — trainer Rita (nutrition)
+  - `cardio.jpg`, `weightloss.jpg`, `musclegain.jpg`, `strength.jpg` — service-specific images
+
+The site includes a small client-side script (`js/image-swap.js`) that checks for these filenames and replaces SVG placeholders/backgrounds when the images are present. That means teachers can upload files with the names above and they will appear automatically without editing HTML.
+ 
 
 + Quick (no server): double-click an HTML file in Explorer or open it in the browser.
 + Recommended (serves relative links consistently): from the repository root (PowerShell), run:
